@@ -2,6 +2,7 @@
 
 $txt = " ";
 $txt_nopunc = preg_replace('#[^a-zA-Z ]#', "", $txt);
+strtolower($txt_nopunc);
 $words = explode(" " , $txt_nopunc);
 $wordfreq = array();
 
